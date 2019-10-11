@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programmers_explanation", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biggest_Number", "Biggest_Number\Biggest_Number.csproj", "{D85D4F01-C23E-498E-8DAF-B8CE6FDD0B8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K_th number", "K_th number\K_th number.csproj", "{E1438FAC-0A81-4561-8973-6D347EAA3338}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D85D4F01-C23E-498E-8DAF-B8CE6FDD0B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D85D4F01-C23E-498E-8DAF-B8CE6FDD0B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D85D4F01-C23E-498E-8DAF-B8CE6FDD0B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1438FAC-0A81-4561-8973-6D347EAA3338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1438FAC-0A81-4561-8973-6D347EAA3338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1438FAC-0A81-4561-8973-6D347EAA3338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1438FAC-0A81-4561-8973-6D347EAA3338}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
