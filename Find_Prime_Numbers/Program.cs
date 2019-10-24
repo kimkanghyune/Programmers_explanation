@@ -11,7 +11,7 @@ namespace Find_Prime_Numbers
         static void Main(string[] args)
         {
             Solution solution = new Solution();
-            solution.solution("011");
+            solution.solution("17");
         }
     }
 }
