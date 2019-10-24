@@ -8,35 +8,58 @@ namespace Find_Prime_Numbers
 {
     public class Solution
     {
+        List<int> Permute_List = new List<int>();
+        private void permute(string str, int l, int r)
+        {
+            if (l == r)
+                Permute_List.Add(Convert.ToInt32(str));
+            else
+            {
+                for (int i = l; i <= r; i++)
+                {
+                    str = swap(str, l, i);
+                    permute(str, l + 1, r);
+                    str = swap(str, l, i);
+                }
+            }
+        }
+
+        public string swap(string a, int i, int j)
+        {
+            char temp;
+            char[] charArray = a.ToCharArray();
+            temp = charArray[i];
+            charArray[i] = charArray[j];
+            charArray[j] = temp;
+            string s = new string(charArray);
+            return s;
+        }
+
         public int solution(string numbers)
         {
             int answer = 0;
-            List<int> Arr_numbers = new List<int>();
+            permute(numbers, 0, numbers.Length - 1);
 
-            StringBuilder sb = new StringBuilder();
-            Arr_numbers = StringCombination(numbers, sb, 0);
-            Collections.
+            for (int i = 2; i < Permute_List.Max(); i++)
+            {
+                Permute_List.RemoveAll(
+                    delegate (int x)
+                {
+                    return x > i && x % i == 0; 
+                }
+                );
+            }
+
+            Permute_List = Permute_List.Distinct().ToList();
+
+            Permute_List.ForEach(
+                delegate (int x) 
+                { 
+                    Console.Write("{0} ", x); 
+                }
+                );
 
             return answer;
-        }
-        List<int> StringCombination(string s, StringBuilder sb, int index)
-        {
-            List<int> Arr_numbers = new List<int>();
-            for (int i = index; i < s.Length; i++)
-            {
-                // 1) 한 문자 추가
-                sb.Append(s[i]);
-
-                // 2) 구한 문자조합 출력
-                Console.WriteLine(sb.ToString());
-
-                // 3) 나머지 문자들에 대한 조합 구하기
-                StringCombination(s, sb, i + 1);
-
-                // 위의 1에서 추가한 문자 삭제 
-                sb.Remove(sb.Length - 1, 1);
-            }
-            return Arr_numbers;
         }
     }
 }
