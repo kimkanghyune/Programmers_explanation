@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H-index", "H-index\H-index.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockTest", "MockTest\MockTest.csproj", "{AF90588C-E629-4366-914C-2616C5D0FA93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find_Prime_Numbers", "Find_Prime_Numbers\Find_Prime_Numbers.csproj", "{04345213-6E46-461F-B76C-BFD9A12113A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AF90588C-E629-4366-914C-2616C5D0FA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF90588C-E629-4366-914C-2616C5D0FA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF90588C-E629-4366-914C-2616C5D0FA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04345213-6E46-461F-B76C-BFD9A12113A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04345213-6E46-461F-B76C-BFD9A12113A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04345213-6E46-461F-B76C-BFD9A12113A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04345213-6E46-461F-B76C-BFD9A12113A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
