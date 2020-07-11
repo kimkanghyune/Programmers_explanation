@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AF90588C-E629-4366-914C-2616C5D0FA93}</ProjectGuid>
+    <ProjectGuid>{4C0F771B-0FB8-45E7-90F8-0F13DA3A34CD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MockTest</RootNamespace>
-    <AssemblyName>MockTest</AssemblyName>
+    <RootNamespace>ProgressTime</RootNamespace>
+    <AssemblyName>ProgressTime</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,9 +31,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
